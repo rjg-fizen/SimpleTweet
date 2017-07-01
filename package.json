@@ -1,0 +1,15 @@
+{
+  "name": "node-tweet",
+  "version": "1.0.0",
+  "description": "Simple tweet",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "ryan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  }
+}
