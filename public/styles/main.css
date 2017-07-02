@@ -1,9 +1,10 @@
 .centered {
     margin: 0 auto;
+    width: 35%;
 }
 
-.main { 
-    width: 35%;
+.tweets { 
+    
 }
 
 .tweet { 
@@ -13,6 +14,7 @@
     background-color: #E0EAEA;
     padding: 5px;
     box-sizing: border-box;
+    
 }
 
 .tweet-author { 
@@ -24,6 +26,8 @@
     text-align: center;
     margin: 3px;
 }
+
+
 
 h3, h4 {
     padding: 0;

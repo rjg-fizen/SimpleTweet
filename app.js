@@ -9,7 +9,7 @@ let tweets = [
     },
     {
         name: 'my second test yo',
-        description: 'this shit is pretty fuckin cool'
+        description: 'this is pretty cool'
     }
 ];
 

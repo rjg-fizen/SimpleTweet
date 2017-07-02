@@ -1,11 +1,13 @@
-// $(function() { 
+$(function() { 
+
+    var getTweets = function() {
     $.ajax({ 
         url: '/tweets',
         method: 'GET',
         success: function(data){ 
+            $('.tweets').html('');
             data.map(function(item) {
-                $('.main').append(`<div class="tweet">
-                                         <h4 class="tweet-author">${item.name}</h4>
+                $('.tweets').append(`<div class="tweet">
                                          <p class="tweet-body">
                                             ${item.description}
                                         </p>
@@ -13,4 +15,18 @@
         });
         
     }});
-// });
+    };
+
+    getTweets();
+
+    $('.button').on('click', function(e){
+        $.ajax({
+            url: '/tweet',
+            method: 'POST',
+            data: JSON.stringify({ "name": $('.name').val(), "description": $('.description').val()}),
+            contentType: 'application/json'
+        }).done(function(){
+            getTweets();
+        })
+    })
+});
